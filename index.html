@@ -1,36 +1,96 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DejavuのHP</title>
+    <title>Dejavu's Laboratory</title>
     <!-- サイトの表示領域を、閲覧するデバイスの幅に合わせる -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css"
   </head>
   <body>
-    <div id="title">
-      <center>
-     <h2>DejavuのHPへようこそ。</h2>
-     </center>
-     </div>
-    <div id="introduction">
-     <h2>自己紹介</h2>
-      <p>8月21日生まれ<br>
-        名城大学薬学部に進学予定</p>
+    <div class="header">
+      <div class="header-logo">
+        <!--img src="HPlogo.jpg"-->
+        Dejavu's Laboratory.
+      </div>
+      <div class="header-list">
+        <ul>
+          <li>自己紹介</li>
+          <li>各種SNS</li>
+          <li>限定サイト</li>
+        </ul>
+      </div>
     </div>
-    <div id="SNS">
-    <h2>各種SNSもやっています。</h2>
-    <li>ツイッター</li>
-    <a href="https://twitter.com/dejavu_main" target="_blank">Twitterのリンク</a>
-     <li>note</li>
-    <a href="https://note.com/dejavu_note" target="_blank">noteのリンク</a>
-  </div>    
-  <!--認証-->
-  <input type="button" value="限定サイトへアクセスする。" onclick="gate();">
-  <!--認証部分java-->
-  <script type="text/javascript">
-    function gate() {
-       var UserInput = prompt("Please enter a passeword which you know.:","");
-       location.href = "https://sites.google.com/view/"+ UserInput + "/%E6%9D%B1%E6%B5%B7news";
-    }
- </script>
+
+    <div class="main">
+      <div class="copy-container">
+        <h1>Dejavu's laboratory
+          <span>.</span>
+        </h1>
+        <h2>ようこそ。</h2>
+      </div>
+
+      <div class="introduction">
+        <h3 class="introduction-title">
+          自己紹介
+        </h3>
+        <div class="introduction-item">
+          <ul>
+            <li>2003年8月21日生まれ</li>
+          <li>名城大学薬学部進学予定</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sns">
+        <h3 class="sns-title">
+          各種SNS
+        </h3>
+      </div>
+      <div class="sns-item">
+        <!--img src="twitter-logo.svg"-->
+        <p>twitter
+          <br>
+          <a href="https://twitter.com/dejavu_main" target="_blank">Twitterのリンク</a>
+        </p>
+      </div>
+      <div class="sns-item">
+        <img src="note.img">
+        <p>note</p>
+        <br>
+        <a href="https://note.com/dejavu_note" target="_blank">noteのリンク</a>
+      </div>
+      <div class="sns-item">
+        <img src="github.img">
+        <p>github</p>
+      </div>
+
+      <div class="contact-form">
+        <h3 class="contact-title">
+          お問い合わせ
+        </h3>
+        <p>Twitter ID（必須）</p>
+        <input>
+
+        <p>お問い合わせ内容</p>
+        <textarea></textarea>
+
+        <p>※必須項目は必ずご入力ください</p>
+        <input class="contact-submit" type="submit" value="送信"
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-logo">
+        Dejavu's Laboratory<span>.</span>
+      </div>
+      <div class="footer-list">
+        <ul>
+          <li>自己紹介</li>
+          <li>各種SNS</li>
+          <li>限定サイト</li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
