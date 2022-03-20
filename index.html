@@ -9,65 +9,90 @@
   <body>
     <div class="header">
       <div class="header-logo">
-        <!--img src="HPlogo.jpg"-->
-        Dejavu's Laboratory.
+        <img src="HPlogo.jpg" height="90px">
       </div>
       <div class="header-list">
         <ul>
-          <li>自己紹介</li>
-          <li>各種SNS</li>
-          <li>限定サイト</li>
+          <li><a href="#introduction">自己紹介</a></li>
+          <li><a href="#sns">各種SNS</a></li>
+          <li><a href="#java">Javaで計算</a></li>
+          <li><a href="#limited">限定サイト</a></li>
+          <li><a href="#contact-form">お問い合わせ</a></li>
         </ul>
       </div>
     </div>
 
     <div class="main">
       <div class="copy-container">
-        <h1>Dejavu's laboratory
-          <span>.</span>
+        <h1>
+          <span>D</span>ejavu's
+          <br>
+          <span>L</span>aboratory
+          <br>
+          <span>site</span>.
         </h1>
         <h2>ようこそ。</h2>
       </div>
 
       <div class="introduction">
-        <h3 class="introduction-title">
+        <a id="introduction">
+          <h3 class="introduction-title">
           自己紹介
-        </h3>
+          </h3>
+        </a>
         <div class="introduction-item">
           <ul>
             <li>2003年8月21日生まれ</li>
-          <li>名城大学薬学部進学予定</li>
+            <li>名城大学薬学部進学予定</li>
           </ul>
         </div>
       </div>
 
       <div class="sns">
-        <h3 class="sns-title">
-          各種SNS
-        </h3>
+        <a id="sns">
+          <h3 class="sns-title">
+            各種SNS
+          </h3>
+        </a>
       </div>
       <div class="sns-item">
-        <!--img src="twitter-logo.svg"-->
-        <p>twitter
-          <br>
-          <a href="https://twitter.com/dejavu_main" target="_blank">Twitterのリンク</a>
-        </p>
+        <a href="https://twitter.com/dejavu_main"><img src="twitter-logo.svg" width="40%" alt="Twitter"></a>
       </div>
       <div class="sns-item">
-        <img src="note.img">
-        <p>note</p>
-        <br>
-        <a href="https://note.com/dejavu_note" target="_blank">noteのリンク</a>
+        <a href="https://note.com/dejavu_note"><img src="logo_tagline.png" width="40%" alt="note"></a>
       </div>
-      <div class="sns-item">
-        <img src="github.img">
-        <p>github</p>
+
+      <div class="java">
+        <a id="java">
+          <h3 class="java-title">
+            Javaで計算
+          </h3>
+        </a>
+        調整中
+      </div>
+      
+      <div class="limited">
+        <a id="limited">
+          <h3 class="limited-title">限定サイト</h3>
+        </a>
+        <input type="button" value="パスワードを入力して限定へアクセスする" onclick="gate();">
+
+        <!--認証スクリプト-->
+        <script type="text/javascript">
+          function gate() {
+            var UserInput = prompt("パスワードを入力して下さい:","");
+            location.href = "https://sites.google.com/view/" + UserInput + "/東海news?authuser=0";
+          }
+        </script>
+        <!--ここまで認証スクリプト-->
       </div>
 
       <div class="contact-form">
-        <h3 class="contact-title">
+        <a id="contact-form">
+          <h3 class="contact-title">
           お問い合わせ
-        </h3>
+          </h3>
+        </a>
         <p>Twitter ID（必須）</p>
         <input>
 
@@ -86,9 +111,11 @@
       </div>
       <div class="footer-list">
         <ul>
-          <li>自己紹介</li>
-          <li>各種SNS</li>
-          <li>限定サイト</li>
+          <li><a href="#introduction">自己紹介</a></li>
+          <li><a href="#sns">各種SNS</a></li>
+          <li><a href="#java">Javaで計算</a></li>
+          <li><a href="#limited">限定サイト</a></li>
+          <li><a href="#contact-form">お問い合わせ</a></li>
         </ul>
       </div>
     </div>
