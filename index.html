@@ -3,19 +3,18 @@
   <head>
     <title>Dejavu's Laboratory</title>
     <!-- サイトの表示領域を、閲覧するデバイスの幅に合わせる -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name=”viewport” content=”width=device-width,initial-scale=1″>    <meta name="description" content="dejavuの公式サイトです。今後開発予定。">
     <link rel="stylesheet" href="stylesheet.css"
   </head>
-  <body>
+  <body onload="LoadProc();">
     <div class="header">
       <div class="header-logo">
-        <img src="HPlogo.jpg" height="90px">
+        <img src="img/HPlogo.jpg" height="90px">
       </div>
       <div class="header-list">
         <ul>
-          <li><a href="#introduction">自己紹介</a></li>
+          <li><a href="#about">自己紹介</a></li>
           <li><a href="#sns">各種SNS</a></li>
-          <li><a href="#java">Javaで計算</a></li>
           <li><a href="#limited">限定サイト</a></li>
           <li><a href="#contact-form">お問い合わせ</a></li>
         </ul>
@@ -24,52 +23,80 @@
 
     <div class="main">
       <div class="copy-container">
-        <h1>
-          <span>D</span>ejavu's
-          <br>
-          <span>L</span>aboratory
-          <br>
-          <span>site</span>.
-        </h1>
-        <h2>ようこそ。</h2>
+        <h1>ようこそ。</h1>
+        <ul>
+          <h2>
+          <li>Welcome</li>
+          <li>欢迎欢迎</li>
+          <li>
+          مرحبا
+          </li>
+          </h2>
+        </ul>
       </div>
-
-      <div class="introduction">
-        <a id="introduction">
-          <h3 class="introduction-title">
-          自己紹介
-          </h3>
-        </a>
-        <div class="introduction-item">
-          <ul>
-            <li>2003年8月21日生まれ</li>
-            <li>名城大学薬学部進学予定</li>
-          </ul>
+      <script type="text/javascript">
+        var now = new Date();
+        function LoadProc() {
+          var target = document.getElementById("DateTimeDisp");
+    
+          var Year = now.getFullYear();
+          var Month = now.getMonth()+1;
+          var Date = now.getDate();
+          var Hour = now.getHours();
+          var Min = now.getMinutes();
+          var Sec = now.getSeconds();
+    
+          target.innerHTML = Year + "年" + Month + "月" + Date + "日" + Hour + ":" + Min + ":" + Sec;
+        }
+    
+      </script>
+      現在の時刻:
+      <div id="DateTimeDisp"></div>
+      <div class="scrool">
+        <hr>
+      <marquee>このHPは現在開発中です。</marquee>
+        <hr>
+      </div>
+      <section id="about" class="wrapper" >
+        <h2 class="about-title">About</h2>
+        <div class="content">
+            <img src="img/me.jpg" width="40%">
+            <div class="introduction-item">
+              <ul>
+                <li>2003年8月21日生まれ</li>
+                <li>東海高校74期卒</li>
+                <li>名城大学薬学部在籍</li>
+              <ul>
+            </div>
+    
         </div>
-      </div>
-
+    </section>
       <div class="sns">
-        <a id="sns">
-          <h3 class="sns-title">
+        <div class="sns-title">
+          <h3>
             各種SNS
           </h3>
-        </a>
-      </div>
-      <div class="sns-item">
-        <a href="https://twitter.com/dejavu_main"><img src="twitter-logo.svg" width="40%" alt="Twitter"></a>
-      </div>
-      <div class="sns-item">
-        <a href="https://note.com/dejavu_note"><img src="logo_tagline.png" width="40%" alt="note"></a>
-      </div>
+          <p>それぞれのロゴをクリックすることでSNSに遷移します。</p>
+        </div>
 
-      <div class="java">
-        <a id="java">
-          <h3 class="java-title">
-            Javaで計算
-          </h3>
-        </a>
-        調整中
-      </div>
+        <ul>
+          <li>
+            <a href="https://twitter.com/dejavu_main">
+              <img src="img/twitter-logo.svg" alt="twitterロゴ">
+            </a>
+            <h3>Twitter</h3>
+            <p>
+              日常の出来事や思ったことを投稿しています。
+            </p>
+          </li>
+          <li>
+            <img src="img/logo_tagline.png" alt="noteロゴ" width="100%">
+            <h3>note</h3>
+            <p>
+              Twitterでは収まりきらない長文になってしまう出来事を投稿しています。
+            </p>
+          </li>
+        </ul>
       
       <div class="limited">
         <a id="limited">
@@ -113,7 +140,6 @@
         <ul>
           <li><a href="#introduction">自己紹介</a></li>
           <li><a href="#sns">各種SNS</a></li>
-          <li><a href="#java">Javaで計算</a></li>
           <li><a href="#limited">限定サイト</a></li>
           <li><a href="#contact-form">お問い合わせ</a></li>
         </ul>

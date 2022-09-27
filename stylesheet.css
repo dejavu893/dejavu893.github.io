@@ -12,38 +12,57 @@ li{
 }
 
 .header{
+    display: flex;
+    justify-content: space-between;
     background-color: #26d0c9;
     color:#fff;
     height:90px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .header-logo{
     float:left;
-    padding: 0px 40px;
+}
+.header-list ul{
+    display: flex;
+    padding: 20px;
 }
 
 .header-list li{
+    display: inline-block;
     float:left;
-    padding: 15px 20px ;
-    border: 2px solid #fff;
-    margin: 25px 20px 0px 20px;
+    justify-content: space-between;
+    margin-left: 30px;
 }
+
+
+.header-list li a{
+    color: #24292e;
+}
+
+.header-list li :hover{
+    opacity: 0.7;
+}
+
 
 .main{
     padding:0px 80px;
 }
 
 .copy-container h1{
-    font-size: 140px;
+    font-size: 100px;
 }
 
 .copy-container h2{
-    font-size: 60px;
+    font-size: 20px;
 }
 
-.copy-container span{
-    color:#ff4a4a
+.copy-container li{
+    display: inline-block;
+    float:left;
+    justify-content: space-between;
+    margin-left: 30px;
 }
 
 .contents {
@@ -51,13 +70,51 @@ li{
     margin-top: 100px;
 }
 
-.introduction-title , .sns-title , .limited-title , .java-titleD{
+.about-title , .sns-title , .limited-title {
     border-bottom: 2px solid #dee7ec;
     font-size: 28px;
     padding-bottom: 24px;
     margin-bottom: 50px;
 }
 
+.scrool{
+    color:red
+}
+/*--------------
+about
+--------------*/
+
+#about .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+#about .text{
+    text-align: left;
+}
+
+/*-------------------------------------------
+SNS
+--------------------------------------------*/
+
+.sns ul{
+    display: flex;
+    justify-content: space-between;
+    object-fit: cover;
+}
+
+.sns li{
+    width: 45%;
+}
 .sns-item{
     float: left;
     margin-right: 40px;
